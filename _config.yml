@@ -1,0 +1,17 @@
+markdown: kramdown
+highlighter: pygments
+source: source
+safe: false
+permalink: /news/:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  parse_block_html: true
+  toc_levels: 2..6
+  use_coderay: true
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: nil
+    coderay_css: class
+
