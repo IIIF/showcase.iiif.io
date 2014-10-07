@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/IIIF/iiif.io.svg?branch=master)](https://travis-ci.org/IIIF/iiif.io)
 
-# IIIF Demos
+# IIIF Showcase
 
-Source of the IIIF Demo site (demos.iiif.io)
+Source of the IIIF demos site (showcase.iiif.io)
 
 ## To Debug the Site
 
