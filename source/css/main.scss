@@ -631,40 +631,84 @@ a.button-turquoise {
 
 /* flip animation */
 .sub-pages-container section.showcase .isotope-item {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
   perspective: 1000;
 }
 
 .isotope-item:hover .flipper, .isotope-item.hover .flipper {
-	transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 .isotope-item .flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
 /* hide back of pane during swap */
 .isotope-item .front,
 .isotope-item .back {
-	backface-visibility: hidden;
   background-color: #eee;
   border: 1px solid #e6e6e6;
   height: 360px;
-	position: absolute;
-	top: 0;
-	left: 0;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -moz-transform: rotateY(0deg);
+
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  -o-transform: rotateY(0deg);
+
+  -ms-transition: 0.6s;
+  -ms-transform-style: preserve-3d;
+  -ms-transform: rotateY(0deg);
+
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .isotope-item .front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
 }
 
 .isotope-item .back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
   padding: 0 15px;
-	transform: rotateY(-180deg);
 }
 
 .isotope-item .back .desc {
