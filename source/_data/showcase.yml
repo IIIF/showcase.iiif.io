@@ -1,3 +1,11 @@
+- name: OpenSeadragon
+  id: osd
+  img_url: img/showcase/osd.jpg
+  desc:
+  - >
+    An open-source, web-based viewer for zoomable images, implemented in pure JavaScript.
+  github_url: https://github.com/openseadragon/openseadragon
+  url: http://openseadragon.github.io
 - name: Mirador Viewer
   id: mirador
   img_url: img/showcase/mirador.jpg
@@ -5,7 +13,7 @@
   - >
     An open-source, web-based 'multi-up' viewer that supports zoom-pan-rotate
     functionality, ability to display/compare simple images, and images with
-    annotations
+    annotations.
   github_url: https://github.com/IIIF/mirador
   url: showcase/mirador-viewer.html
 - name: Loris IIIF Image Server
