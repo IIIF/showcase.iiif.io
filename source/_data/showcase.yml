@@ -24,7 +24,7 @@
   desc:
   - >
     Loris is an open source, Python-based image server that supports the IIIF
-    Image API ver 1.1. Loris supports JPEG and TIFF sources as well as JPEG2000.
+    Image API version 2.0. Loris supports JPEG2000 as well as JPEG and TIFF source images.
   github_url: https://github.com/pulibrary/loris
   url: showcase/loris-server.html
 
