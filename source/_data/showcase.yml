@@ -39,14 +39,17 @@
   github_url: https://github.com/wellcomelibrary/player
   url: showcase/wellcome-player.html
 
-- name: Home Fractals
-  id: fractals
-  img_url: img/showcase/home-fractals.jpg
+- name: IIP Image Viewer
+  id: iip
+  img_url: img/showcase/iip.png
   desc:
   - >
-    Suspendisse eu dignissim lacus. In ac sodales ante. Vivamus dictum est nec
-    erat vulputate rhoncus
-  url: showcase/home-fractals.html
+    IIPImage is a high-performance feature-rich image server system
+    for web-based streamed viewing and zooming of ultra high-resolution images.
+    IIPImage Server is designed to be embedded within a host web server such as Apache, Lighttpd, 
+    MyServer or Nginx. It supports TIFF and JPEG2000 source images.
+  github_url: https://github.com/ruven
+  url: showcase/iipimage-viewer.html
 
 - name: Yale Center for British Art
   id: ycba
