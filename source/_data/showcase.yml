@@ -3,7 +3,8 @@
   img_url: img/showcase/osd.jpg
   desc:
   - >
-    An open-source, web-based viewer for zoomable images, implemented in pure JavaScript.
+    An open-source, web-based viewer for zoomable images, implemented in pure
+    JavaScript.
   github_url: https://github.com/openseadragon/openseadragon
   url: showcase/osd-viewer.html
 
@@ -27,6 +28,18 @@
     Image API version 2.0. Loris supports JPEG2000 as well as JPEG and TIFF source images.
   github_url: https://github.com/pulibrary/loris
   url: showcase/loris-server.html
+
+- name: IIPImage
+  id: iipimage
+  img_url: img/showcase/iipimage.jpg
+  desc:
+  - >
+    IIPImage is an advanced high-performance feature-rich image server system
+    for web-based streamed viewing and zooming of ultra high-resolution images.
+  github_url: https://github.com/ruven
+  sourceforge_url: http://sourceforge.net/projects/iipimage/
+  url: showcase/iipimage-viewer.html
+
 
 - name: Wellcome Player
   id: wellcome
