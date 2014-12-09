@@ -59,3 +59,15 @@
     The Yale Center for British Art uses IIPMooviewer's IIIF Image API support
     to provide access to high-resolution images.
   url:  showcase/ycba.html
+
+- name: Leaflet-IIIF Viewer
+  id: leaflet
+  img_url: img/showcase/leaflet.jpg
+  desc:
+  - >
+    Leaflet-IIIF is a Leaflet plugin that enables zoomable IIIF images to be
+    easily and quickly displayed. Leaflet + Leaflet-IIIF weigh in at just 35 KB 
+    and include great features like accessible keyboard controls and native
+    touch/mobile support.
+  github_url: https://github.com/mejackreed/Leaflet-IIIF
+  url: showcase/leaflet-iiif-viewer.html
