@@ -71,3 +71,11 @@
     touch/mobile support.
   github_url: https://github.com/mejackreed/Leaflet-IIIF
   url: showcase/leaflet-iiif-viewer.html
+
+- name: Fractals
+  id: fractals
+  img_url: img/showcase/fractals.jpg
+  desc:
+  - >
+    IIIF components are used to serve and view dynamically created fractal images up to 1 billion pixels wide and 1 billion pixels high. Fractals exhibit patterns that repeat as you zoom in. A standard IIIF viewer and web server are used, together with a fractal generator that emulates the way tiles are created from JPEG2000 images.
+  url: showcase/fractals.html  

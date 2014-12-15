@@ -1,8 +1,0 @@
-- name: Home Fractals
-  id: fractals
-  img_url: img/showcase/home-fractals.jpg
-  desc:
-  - >
-    Suspendisse eu dignissim lacus. In ac sodales ante. Vivamus dictum est nec
-    erat vulputate rhoncus
-  url: showcase/home-fractals.html
