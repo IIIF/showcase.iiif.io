@@ -79,3 +79,11 @@
   - >
     IIIF components are used to serve and view dynamically created fractal images up to 1 billion pixels wide and 1 billion pixels high. Fractals exhibit patterns that repeat as you zoom in. A standard IIIF viewer and web server are used, together with a fractal generator that emulates the way tiles are created from JPEG2000 images.
   url: showcase/fractals.html  
+
+- name: e-codices
+  id: e-codices
+  img_url: img/showcase/e-codices.png
+  desc:
+  - >
+    e-codices – Virtual Manuscript Library of Switzerland uses the Loris IIIF Image Server, OpenSeadragon and the IIIF Presentation API, providing access to over 450,000 high-resolution images from over 1,200 medieval manuscripts with metadata in four languages.
+  url: showcase/e-codices.html
