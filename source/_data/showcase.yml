@@ -1,5 +1,9 @@
+
+### Clients
+
 - name: OpenSeadragon
   id: osd
+  type: client
   img_url: img/showcase/osd.jpg
   desc:
   - >
@@ -9,6 +13,7 @@
 
 - name: Mirador Viewer
   id: mirador
+  type: client
   img_url: img/showcase/mirador.jpg
   desc:
   - >
@@ -18,18 +23,9 @@
   github_url: https://github.com/IIIF/mirador
   url: showcase/mirador-viewer.html
 
-- name: Loris IIIF Image Server
-  id: loris
-  img_url: img/showcase/loris.jpg
-  desc:
-  - >
-    Loris is an open source, Python-based image server that supports the IIIF
-    Image API version 2.0. Loris supports JPEG2000 as well as JPEG and TIFF source images.
-  github_url: https://github.com/pulibrary/loris
-  url: showcase/loris-server.html
-
 - name: Wellcome Player
   id: wellcome
+  type: client
   img_url: /img/showcase/wellcome-player.jpg
   desc:
   - >
@@ -39,38 +35,9 @@
   github_url: https://github.com/wellcomelibrary/player
   url: showcase/wellcome-player.html
 
-- name: Georeferencer
-  id: georeferencer
-  img_url: img/showcase/georeferencer.jpg
-  desc:
-  - >
-    Turn scans into maps. Georeferencer is an online tool that assigns 
-    geographical location to any IIIF image.  
-  url: showcase/georeferencer.html
-  
-- name: IIP Image Viewer
-  id: iip
-  img_url: img/showcase/iip.png
-  desc:
-  - >
-    IIPImage is a high-performance feature-rich image server system
-    for web-based streamed viewing and zooming of ultra high-resolution images.
-    IIPImage Server is designed to be embedded within a host web server such as Apache, Lighttpd, 
-    MyServer or Nginx. It supports TIFF and JPEG2000 source images.
-  github_url: https://github.com/ruven
-  url: showcase/iipimage-viewer.html
-
-- name: Yale Center for British Art
-  id: ycba
-  img_url:  img/showcase/yale-ycba-iipmooviewer.png
-  desc:
-  - >
-    The Yale Center for British Art uses IIPMooviewer's IIIF Image API support
-    to provide access to high-resolution images.
-  url:  showcase/ycba.html
-
 - name: Leaflet-IIIF Viewer
   id: leaflet
+  type: client
   img_url: img/showcase/leaflet.jpg
   desc:
   - >
@@ -81,24 +48,9 @@
   github_url: https://github.com/mejackreed/Leaflet-IIIF
   url: showcase/leaflet-iiif-viewer.html
 
-- name: Fractals
-  id: fractals
-  img_url: img/showcase/fractals.jpg
-  desc:
-  - >
-    IIIF components are used to serve and view dynamically created fractal images up to 1 billion pixels wide and 1 billion pixels high. Fractals exhibit patterns that repeat as you zoom in. A standard IIIF viewer and web server are used, together with a fractal generator that emulates the way tiles are created from JPEG2000 images.
-  url: showcase/fractals.html  
-
-- name: e-codices
-  id: e-codices
-  img_url: img/showcase/e-codices.png
-  desc:
-  - >
-    e-codices – Virtual Manuscript Library of Switzerland uses the Loris IIIF Image Server, OpenSeadragon and the IIIF Presentation API, providing access to over 450,000 high-resolution images from over 1,200 medieval manuscripts with metadata in four languages.
-  url: showcase/e-codices.html
-
 - name: KlokanTech IIIFViewer
   id: klokantech-iiifviewer
+  type: client
   img_url: img/showcase/klokantechiiifviewer.png
   desc:
   - >
@@ -108,3 +60,76 @@
     markers), Color adjustment (saturation, lightness, etc.), WebGL...
   github_url: https://github.com/klokantech/iiifviewer
   url: showcase/klokantech-iiifviewer.html
+
+### Servers
+
+- name: Loris IIIF Image Server
+  id: loris
+  type: server
+  img_url: img/showcase/loris.jpg
+  desc:
+  - >
+    Loris is an open source, Python-based image server that supports the IIIF
+    Image API version 2.0. Loris supports JPEG2000 as well as JPEG and TIFF source images.
+  github_url: https://github.com/pulibrary/loris
+  url: showcase/loris-server.html
+
+- name: IIP Image
+  id: iip
+  type: server
+  img_url: img/showcase/iip.png
+  desc:
+  - >
+    IIPImage is a high-performance feature-rich image server system
+    for web-based streamed viewing and zooming of ultra high-resolution images.
+    IIPImage Server is designed to be embedded within a host web server such as Apache, Lighttpd, 
+    MyServer or Nginx. It supports TIFF and JPEG2000 source images.
+  github_url: https://github.com/ruven
+  url: showcase/iipimage-viewer.html
+
+### Sites/Consumers
+
+- name: Georeferencer
+  id: georeferencer
+  type: site
+  img_url: img/showcase/georeferencer.jpg
+  desc:
+  - >
+    Turn scans into maps. Georeferencer is an online tool that assigns 
+    geographical location to any IIIF image.  
+  url: showcase/georeferencer.html
+
+- name: Yale Center for British Art
+  id: ycba
+  type: site
+  img_url:  img/showcase/yale-ycba-iipmooviewer.png
+  desc:
+  - >
+    The Yale Center for British Art uses IIPMooviewer's IIIF Image API support
+    to provide access to high-resolution images.
+  url:  showcase/ycba.html
+
+- name: e-codices
+  id: e-codices
+  type: site
+  img_url: img/showcase/e-codices.png
+  desc:
+  - >
+    e-codices – Virtual Manuscript Library of Switzerland uses the Loris IIIF Image Server, OpenSeadragon and the IIIF Presentation API, providing access to over 450,000 high-resolution images from over 1,200 medieval manuscripts with metadata in four languages.
+  url: showcase/e-codices.html
+
+- name: Fractals
+  id: fractals
+  type: site
+  img_url: img/showcase/fractals.jpg
+  desc:
+  - >
+    IIIF components are used to serve and view dynamically created fractal images up to 1 billion pixels wide and 1 billion pixels high. Fractals exhibit patterns that repeat as you zoom in. A standard IIIF viewer and web server are used, together with a fractal generator that emulates the way tiles are created from JPEG2000 images.
+  url: showcase/fractals.html  
+
+
+### Other
+
+
+
+
