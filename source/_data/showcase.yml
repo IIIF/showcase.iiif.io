@@ -39,6 +39,15 @@
   github_url: https://github.com/wellcomelibrary/player
   url: showcase/wellcome-player.html
 
+- name: Georeferencer
+  id: georeferencer
+  img_url: img/showcase/georeferencer.jpg
+  desc:
+  - >
+    Turn scans into maps. Georeferencer is an online tool that assigns 
+    geographical location to any IIIF image.  
+  url: showcase/georeferencer.html
+  
 - name: IIP Image Viewer
   id: iip
   img_url: img/showcase/iip.png
@@ -87,3 +96,15 @@
   - >
     e-codices – Virtual Manuscript Library of Switzerland uses the Loris IIIF Image Server, OpenSeadragon and the IIIF Presentation API, providing access to over 450,000 high-resolution images from over 1,200 medieval manuscripts with metadata in four languages.
   url: showcase/e-codices.html
+
+- name: KlokanTech IIIFViewer
+  id: klokantech-iiifviewer
+  img_url: img/showcase/klokantechiiifviewer.png
+  desc:
+  - >
+    IIIF Viewer from Klokan Technologies is optimized for desktop and mobile 
+    devices (iOS, Android), is open-source, free to use and powered by OpenLayers.
+    Extra features: Rotation on client side, Drawing tools (polygons, lines, 
+    markers), Color adjustment (saturation, lightness, etc.), WebGL...
+  github_url: https://github.com/klokantech/iiifviewer
+  url: showcase/klokantech-iiifviewer.html
