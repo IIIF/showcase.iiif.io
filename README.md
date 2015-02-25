@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/IIIF/iiif.io.svg?branch=master)](https://travis-ci.org/IIIF/iiif.io)
+[![Build Status](https://travis-ci.org/IIIF/showcase.iiif.io.svg?branch=master)](https://travis-ci.org/IIIF/showcase.iiif.io)
 
 # IIIF Showcase
 
