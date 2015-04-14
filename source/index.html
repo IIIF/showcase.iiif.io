@@ -6,13 +6,14 @@ layout: sub-page
 ---
 
 <section class="showcase wrapper">
+  <h2 class="hidden">Showcase</h2>
   <div class="isotope-container">
 
     {% for item in site.data.showcase %}
     <div class="isotope-item"  ontouchstart="this.classList.toggle('hover');">
       <div class="flipper">
         <div class="front">
-          <img src="{{ item.img_url }}">
+          <img src="{{ item.img_url }}" alt="{{ item.name }}">
           <p>{{ item.name }}</p>
         </div>
         <div class="back">

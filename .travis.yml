@@ -1,0 +1,29 @@
+before_install:
+  - export NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - npm install -g grunt-cli
+
+install:
+  - bundle install
+  - npm install grunt grunt-html --save-dev
+
+script: "./test.sh"
+
+# environment
+language: ruby
+rvm:
+  - "2.1"
+
+branches:
+  - 'master'
+
+notifications:
+  email:
+    recipients:
+      - "azaroth42@gmail.com"
+      - "blalbrit@stanford.edu"
+      - "jpstroop@gmail.com"
+      - "michael.appleby@yale.edu"
+      - "simeon.warner@gmail.com"
+      - "snydman@stanford.edu"
+    on_success: "change"
+    on_failure: "change"
