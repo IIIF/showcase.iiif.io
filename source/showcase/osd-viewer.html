@@ -53,12 +53,10 @@ layout: sub-page
     });
   </script>
 
-  <p>
-    {% for item in site.data.showcase %}
-      {% if item.id == "mirador" %}
-        <p>{{ item.desc }}</p>
-        {% if item.github_url %} <a href="{{ item.github_url }}" target="_blank" class="button-turquoise">GitHub</a> {% endif %}
-      {% endif %}
-    {% endfor %}
-  </p>
+  {% for item in site.data.showcase %}
+    {% if item.id == "mirador" %}
+      {% if item.desc %}<p>{{ item.desc }}</p> {% endif %}
+      {% if item.github_url %} <a href="{{ item.github_url }}" target="_blank" class="button-turquoise">GitHub</a> {% endif %}
+    {% endif %}
+  {% endfor %}
 </section>
