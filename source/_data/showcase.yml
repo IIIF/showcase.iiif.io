@@ -130,6 +130,14 @@
 
 ### Other
 
+- name: Reconstructing a medieval manuscript
+  id: biblissima-demo
+  type: site
+  img_url:  http://showcase.iiif.io/img/showcase/biblissima-demo.jpg
+  desc:
+  - >
+    Virtual reconstruction of a French medieval manuscript with the cuttings superimposed on top of the mutilated pages. The demo is based on OpenSeadragon and uses IIIF to request the images from two digital libraries. It is provided by the Biblissima project.
+  url:  http://showcase.iiif.io/showcase/biblissima-demo.html
 
 
 
