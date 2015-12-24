@@ -29,9 +29,8 @@
   img_url: http://showcase.iiif.io/img/showcase/uv.png
   desc:
   - >
-    Initially developed by Digirati for the Wellcome Library, the UV can be used to display all types of digital
-    content, including cover-to-cover books, archives, works of art, videos and
-    audio files.
+    Initially developed by Digirati for the Wellcome Library, the UV can display most types of digital
+    content, including cover-to-cover books, archives, works of art, video, audio and 3D. It also supports the IIIF Auth and Search APIs.
   github_url: https://github.com/UniversalViewer/universalviewer
   url: http://showcase.iiif.io/showcase/uv.html
 
