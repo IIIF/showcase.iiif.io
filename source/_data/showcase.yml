@@ -127,12 +127,12 @@
   url: http://showcase.iiif.io/showcase/fractals.html
 
 - name: SAT Taishōzō Image DB
- id: satdb
- type: site
- img_url: http://showcase.iiif.io/img/showcase/satdb.png
- desc:
- - >
-   Users can search Buddhist images not only from the search window but also from the value of the embedded tag on the images by clicking on it. Users can find search terms by English words with clicking "EN" button. This system also provides a function to display several images in parallel easily from a search result via a cart by use of Mirador.
+  id: satdb
+  type: site
+  img_url: http://showcase.iiif.io/img/showcase/satdb.png
+  desc:
+  - >
+    Users can search Buddhist images not only from the search window but also from the value of the embedded tag on the images by clicking on it. Users can find search terms by English words with clicking "EN" button. This system also provides a function to display several images in parallel easily from a search result via a cart by use of Mirador.
   url:http://dzkimgs.l.u-tokyo.ac.jp/SATi/images.php?alang=en
 
 ### Other
