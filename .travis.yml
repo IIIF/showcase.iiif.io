@@ -1,0 +1,17 @@
+language: ruby
+
+sudo: false
+
+notifications:
+  email: false
+  
+rvm:
+- 2.3.1
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+cache: bundler
+
+script: ./test.sh
