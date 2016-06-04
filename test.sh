@@ -4,4 +4,4 @@
 # 
 bundle exec jekyll build --drafts
 grunt test
-bundle exec htmlproof ./_site
+bundle exec htmlproofer ./_site
