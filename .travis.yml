@@ -4,7 +4,7 @@ sudo: false
 
 notifications:
   email: false
-  
+
 rvm:
 - 2.3.1
 
@@ -14,8 +14,20 @@ env:
 
 cache: bundler
 
-before_script:
-  - npm install -g grunt-cli
-  - npm install
-
 script: ./test.sh
+
+before_deploy: bundle exec jekyll clean && bundle exec jekyll build
+
+deploy:
+  - provider: s3
+    access_key_id:
+      secure: 3L/gJxiZA6XvSQzldRnZgMX8gYVpRegspyevoQeDKqrAMTNEDsIp+AOhcukwrZgDKZJgH8lNEhtcNqnHjukJkSa3ySWUq+Is3+RWYfQII0jgtYNMq5TEOo47B4unFo7lmIvG4uBjlDJxsInKec8DDgzFJjIog+ivvWjdXKkH/yc=
+    secret_access_key:
+      secure: nrH+05JoiR+XBSzmvnAoWyq/SO6zUeIYB/BMgpMENHO7Uyw5nVXOyFpituDyrqdgwqWgcjT7+X5JwgCVM3x01PCbaTbC5KzfMtlyneqn4btqONEoaQb7KF+QHrVzl/0F0acHqxOaCrJiAsnc61AjX3f0f7rwCQY6srTxvnfTwqY=
+    bucket: showcase.iiif.io
+    skip_cleanup: true
+    acl: public_read
+    region: us-east-1
+    local_dir: _site
+    on:
+      branch: master
