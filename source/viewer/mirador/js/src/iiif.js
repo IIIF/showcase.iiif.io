@@ -18,7 +18,7 @@
 
     getUriWithHeight: function(uri, height) {
       uri = uri.replace(/\/$/, '');
-      return this.getUri(uri) + '/full/,' + height + '/0/native.jpg';
+      return this.getUri(uri) + '/full/,' + height + '/0/default.jpg';
     },
 
 
