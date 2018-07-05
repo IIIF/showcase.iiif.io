@@ -4,3 +4,5 @@
 #
 bundle exec jekyll build
 bundle exec htmlproofer --check-html ./_site
+
+./scripts/check_mixedcontent.sh 
