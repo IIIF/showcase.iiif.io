@@ -7,56 +7,26 @@ layout: sub-page
 
 <section class="showcase showcase-item wrapper">
   {% include showcase_return.html %}
-  <div id="iiif-demo"></div>
-  <script src="http://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+  <div id="iiif-demo" style="background-color: #dedee0"></div>
+  <script src="https://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
   <script type="text/javascript">
     OpenSeadragon({
       id:                 "iiif-demo",
-      prefixUrl:          "http://openseadragon.github.io/openseadragon/images/",
+      prefixUrl:          "https://openseadragon.github.io/openseadragon/images/",
       preserveViewport:   true,
-      visibilityRatio:    1,
-      defaultZoomLevel:   1,
-      tileSources:   [{
-        "@context": "http://library.stanford.edu/iiif/image-api/1.1/context.json",
-        "@id": "http://libimages.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000001.jp2",
-        "formats": [ "jpg", "png", "gif" ],
-        "height": 3600,
-        "profile": "http://library.stanford.edu/iiif/image-api/1.1/compliance.html#level2",
-        "qualities": [ "native", "bitonal", "grey", "color" ],
-        "scale_factors": [ 1, 2, 4, 8, 16 ],
-        "tile_height": 256,
-        "tile_width": 256,
-        "width": 2617
-      },{
-        "@context": "http://library.stanford.edu/iiif/image-api/1.1/context.json",
-        "@id": "http://libimages.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000003.jp2",
-        "formats": [ "jpg", "png", "gif" ],
-        "height": 3600,
-        "profile": "http://library.stanford.edu/iiif/image-api/1.1/compliance.html#level2",
-        "qualities": [ "native", "bitonal", "grey", "color" ],
-        "scale_factors": [ 1, 2, 4, 8, 16 ],
-        "tile_height": 256,
-        "tile_width": 256,
-        "width": 2694
-      },{
-        "@context": "http://library.stanford.edu/iiif/image-api/1.1/context.json",
-        "@id": "http://libimages.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000004.jp2",
-        "formats": [ "jpg", "png", "gif" ],
-        "height": 3600,
-        "profile": "http://library.stanford.edu/iiif/image-api/1.1/compliance.html#level2",
-        "qualities": [ "native", "bitonal", "grey", "color" ],
-        "scale_factors": [ 1, 2, 4, 8, 16 ],
-        "tile_height": 256,
-        "tile_width": 256,
-        "width": 2717
-      }]
-    });
+      sequenceMode:  true,
+      tileSources:   [
+        "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000001.jp2/info.json",
+        "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000002.jp2/info.json",
+        "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000003.jp2/info.json",
+        "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000004.jp2/info.json",
+        "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000005.jp2/info.json",
+        "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000006.jp2/info.json",
+        "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000007.jp2/info.json"
+      ]}
+    );
   </script>
 
-    {% for item in site.data.showcase %}
-      {% if item.id == "mirador" %}
-        <p>{{ item.desc }}</p>
-        {% if item.github_url %} <a href="{{ item.github_url }}" target="_blank" class="button-turquoise">GitHub</a> {% endif %}
-      {% endif %}
-    {% endfor %}
+  {% assign id = "osd" %}
+  {% include sub-showcase_md.html %}
 </section>
