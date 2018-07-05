@@ -12,7 +12,7 @@ Source of the IIIF demos site (showcase.iiif.io)
 
 ## To Publish the Site
 
-This is tied to a commit to the master branch. If travis passes all of its tests it should deply automatically.
+This is tied to a commit to the master branch. If travis passes all of its tests it should deploy automatically.
 
 ## Some Things to Note
 
@@ -30,7 +30,7 @@ This is tied to a commit to the master branch. If travis passes all of its tests
     desc:
     - >
       Brief (max. ~30-50 words) description of your project here.
-    url: showcase/example-project.html
+    url: /showcase/example-project.html
 
   ```
 
