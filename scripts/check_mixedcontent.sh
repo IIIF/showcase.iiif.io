@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCANNER_VERSION="0.1"
+SCANNER_VERSION="0.1.1"
 
 mkdir files
 cd files
