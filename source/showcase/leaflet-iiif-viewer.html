@@ -4,12 +4,12 @@ id: showcase-leaflet
 categories: [pages]
 layout: sub-page
 ---
-
 <section class="showcase showcase-item wrapper">
   {% include showcase_return.html %}
 
-    <iframe src="https://mejackreed.github.io/Leaflet-IIIF/examples/example.html" frameborder="0"></iframe>
-
+      <div id="map" style="width: 100%; height: 500px;">
+      </div>
+      <script src="/js/leaflet-examples.js"></script>
   {% assign id = "leaflet" %}
   {% include sub-showcase_md.html %}
 </section>
