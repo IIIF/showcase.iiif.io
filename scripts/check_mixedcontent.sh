@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCANNER_VERSION="0.1.1"
+SCANNER_VERSION="0.1.2"
 
 mkdir files
 cd files
@@ -8,7 +8,7 @@ curl -LO "https://github.com/IIIF/phantomjs-mixed-content-scan/archive/$SCANNER_
 tar zxvf "$SCANNER_VERSION.tar.gz"
 mv phantomjs-mixed-content-scan-$SCANNER_VERSION/* .
 rmdir phantomjs-mixed-content-scan-$SCANNER_VERSION
-./check_mixedcontent.sh ../_site
+./check_mixedcontent.sh ../_site debug
 rm *
 cd ..
 rmdir files
