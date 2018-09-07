@@ -8,6 +8,9 @@ curl -LO "https://github.com/IIIF/phantomjs-mixed-content-scan/archive/$SCANNER_
 tar zxvf "$SCANNER_VERSION.tar.gz"
 mv phantomjs-mixed-content-scan-$SCANNER_VERSION/* .
 rmdir phantomjs-mixed-content-scan-$SCANNER_VERSION
+
+phantomjs --version
+
 ./check_mixedcontent.sh ../_site debug
 rm *
 cd ..
