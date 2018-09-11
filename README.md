@@ -8,11 +8,11 @@ Source of the IIIF demos site (showcase.iiif.io)
 
  1. `bundle install`
 
- 2. Run `$ ./dev.sh` to compile the site and run a dev server on [http://localhost:4000](http://localhost:4000).
+ 2. Run `$ .bundle exec jekyll serve --watch --drafts` to compile the site and run a dev server on [http://localhost:4000](http://localhost:4000).
 
 ## To Publish the Site
 
-(E.g. for Apache to serve), run `./publish.sh /my/site/dir`. Note that if the site is not at '/' on the server, js and css will not work (the source files use absolute paths.)
+This is tied to a commit to the master branch. If travis passes all of its tests it should deploy automatically.
 
 ## Some Things to Note
 
@@ -30,7 +30,7 @@ Source of the IIIF demos site (showcase.iiif.io)
     desc:
     - >
       Brief (max. ~30-50 words) description of your project here.
-    url: showcase/example-project.html
+    url: /showcase/example-project.html
 
   ```
 
@@ -47,7 +47,7 @@ Source of the IIIF demos site (showcase.iiif.io)
   <section class="showcase showcase-item wrapper">
     {% include showcase_return.html %}
 
-    <iframe src="http://example-project.com" frameborder="0"></iframe>
+    <iframe src="https://example-project.com" frameborder="0"></iframe>
 
     {% assign id = "example-project" %}
     {% include sub-showcase_md.html %}
@@ -56,4 +56,3 @@ Source of the IIIF demos site (showcase.iiif.io)
   ```
 
 3. Create a 500 x 500 pixel PNG (or JPEG or GIF) image named `example-project.png` that represents "Example Project" and add it to the `source/img/showcase` directory.
-
