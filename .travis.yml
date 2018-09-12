@@ -26,7 +26,6 @@ cache:
 
 install:
  - bundle install
- - pip install --upgrade pip
  - pip install --user awscli
 
 script: ./scripts/test.sh
