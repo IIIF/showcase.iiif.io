@@ -23,7 +23,6 @@ cache:
 install:
  - pip install --user awscli
 
-
 script: ./test.sh
 
 before_deploy: bundle exec jekyll clean && bundle exec jekyll build
