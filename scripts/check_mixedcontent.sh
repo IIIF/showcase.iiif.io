@@ -11,7 +11,7 @@ rmdir phantomjs-mixed-content-scan-$SCANNER_VERSION
 
 phantomjs --version
 
-./check_mixedcontent.sh ../_site/showcase debug
+./check_mixedcontent.sh ../_site/showcase 
 rm *
 cd ..
 rmdir files
