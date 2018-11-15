@@ -1,0 +1,23 @@
+---
+title: "IIIF Collections"
+id: iiif-collections
+categories: [pages]
+layout: sub-page
+---
+
+<section class="showcase showcase-item wrapper">
+    {% include showcase_return.html %}
+
+    <iframe width="125%" id='main' name='main' src="https://iiif.cloud/" frameborder="0"
+            sandbox="allow-same-origin allow-top-navigation allow-popups allow-scripts"></iframe>
+
+    <span style="font-size: 12px">Note: Paging controls in the viewer context do not work in the iframe because of the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy">Same-origin policy</a> .
+        Check <a href="https://iiif.cloud">https://iiif.cloud</a> for a fully working implementation</span>
+
+    {% assign id = "iiifcloud" %}
+    {% include sub-showcase_md.html %}
+
+
+
+</section>

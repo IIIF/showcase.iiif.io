@@ -111,4 +111,14 @@
     Buddhist images can be searched not only from the search window but also from the value of the embedded tag on the images by clicking on it. Users can find search terms by English words with clicking "EN" button without inputting Japanese words by hand. This system also provides a function to display several images in parallel easily from a search result via a cart by use of Mirador.
   url: /showcase/satdb/
 
-### Other
+- name: IIIF Collections
+  id: iiifcloud
+  type: site
+  img_url: /img/showcase/iiif-collections.png
+  github_url: https://github.com/ubl-chj/collections-ui
+  desc:
+  - >
+    The work-in-progress site features a single page application that seamlessly integrates viewing and discovery for distributed collections.
+    An authenticated user with the api role may also use the Cloud Vision API for text, label and web detection
+    as well as add personal favorites.
+  url: /showcase/iiif-collections/
