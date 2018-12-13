@@ -46,6 +46,16 @@
   github_url: https://github.com/mejackreed/Leaflet-IIIF
   url: /showcase/leaflet-iiif-viewer/
 
+- name: Tify
+  id: tify
+  type: client
+  img_url: img/showcase/tify_IIIF_showcase.png
+  desc:
+  - >
+    TIFY is a slim and mobile-friendly IIIF document viewer built with Vue.js.
+  github_url: https://github.com/subugoe/tify
+  url: /showcase/tify/
+
 ### Servers
 
 - name: Loris IIIF Image Server
